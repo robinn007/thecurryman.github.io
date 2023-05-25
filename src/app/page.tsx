@@ -54,23 +54,42 @@ export default function Home() {
               <p className="pb-4 text-gray-700">
                 If something catches your eye or you just want to connect,
                 I&apos;m always down for a coffee (or run). Plantshed at 12th
-                and 2nd is calling our name.
+                and 2nd is calling our names.
               </p>
               <div className="flex flex-col text-md">
                 <div className="flex">
                   <span className="text-gray-500">Twitter</span>
                   <hr className="w-full mt-3 mx-4 border-gray-300" />
-                  <a className="text-gray-700 underline">@avinashj1</a>
+                  <a
+                    href="https://twitter.com/avinashj_"
+                    target="_blank"
+                    rel="noreferer"
+                    className="text-gray-700 underline"
+                  >
+                    @avinashj1
+                  </a>
                 </div>
                 <div className="flex">
                   <span className="text-gray-500">GitHub</span>
                   <hr className="w-full mt-3 mx-4 border-gray-300" />
-                  <a className="text-gray-700 underline">@TheCurryMan</a>
+                  <a
+                    href="https://github.com/TheCurryMan"
+                    target="_blank"
+                    rel="noreferer"
+                    className="text-gray-700 underline"
+                  >
+                    @TheCurryMan
+                  </a>
                 </div>
                 <div className="flex">
                   <span className="text-gray-500">Email</span>
                   <hr className="w-full mt-3 mx-4 border-gray-300" />
-                  <a className="text-gray-700 underline">
+                  <a
+                    href="mailto:avinashj@berkeley.edu"
+                    target="_blank"
+                    rel="noreferer"
+                    className="text-gray-700 underline"
+                  >
                     avinashj@berkeley.edu
                   </a>
                 </div>
