@@ -1,14 +1,18 @@
 export const allProjects = [
   {
+    title: "Gumball",
+    subtitle: "Interactive, generative coding exercises",
     logo: "./static/images/gumball.png",
     links: [
       {
         title: "Twitter",
-        link: "https://twitter.com/avinashj_/status/1444823123358994434?s=20",
+        link: "https://gumball.avinashj.com",
       },
     ],
   },
   {
+    title: "Waves",
+    subtitle: "On-chain notification system",
     logo: "./static/images/waves.png",
     links: [
       {
@@ -18,6 +22,8 @@ export const allProjects = [
     ],
   },
   {
+    title: "ZooKeeper",
+    subtitle: "NFT Wallet Calculator",
     logo: "./static/images/zookeeper.png",
     links: [
       {
