@@ -40,8 +40,8 @@ export default function Home() {
                   <a target="_blank" href="https://www.usequanta.com/">
                     <u>Quanta</u>
                   </a>
-                  , a seed-stage startup backed by Accel. We're a team of 5,
-                  automating accounting for 20+ companies with a simple
+                  , a seed-stage startup backed by Accel. We&apos;re a team of
+                  5, automating accounting for 20+ companies with a simple
                   principle:{" "}
                 </p>
                 <div></div>
@@ -51,15 +51,15 @@ export default function Home() {
                   data, you <b>have to do the accounting</b>.
                 </blockquote>
                 <p className="text-gray-700">
-                  We're building the best source of financial data for your
-                  company. And we're closing your books faster and more
-                  accurately than any other tool or human. If you're interested
-                  in joining us,{" "}
+                  We&apos;re building the best source of financial data for your
+                  company. And we&apos;re closing your books faster and more
+                  accurately than any other tool or human. If you&apos;re
+                  interested in joining us,{" "}
                   <a
                     href="https://wellfound.com/company/quanta-13"
                     target="_blank"
                   >
-                    we're hiring!
+                    we&apos;re hiring!
                   </a>
                 </p>
               </div>
@@ -280,13 +280,15 @@ export default function Home() {
                   <ul className="list-item list-inside m-0 text-blue-500 font-semibold">
                     The Dark Forest
                   </ul>
-                  <ul className="list-item list-inside m-0">Death's End</ul>
+                  <ul className="list-item list-inside m-0">
+                    Death&apos;s End
+                  </ul>
                   <ul className="list-item list-inside m-0 text-blue-500 font-semibold">
                     Zen and the Art of Motorcycle Maintenance
                   </ul>
                   <ul className="list-item list-inside m-0">Stay True*</ul>
                   <ul className="list-item list-inside m-0">
-                    Brother's Karamazov*
+                    Brother&apos;s Karamazov*
                   </ul>
 
                   <ul className="text-black mb-1 font-semibold">2024</ul>
