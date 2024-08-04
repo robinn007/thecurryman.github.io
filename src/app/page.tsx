@@ -1,14 +1,13 @@
 "use client";
 
+import GitHubCalendar from "react-github-contribution-calendar";
+import { ExperienceMini } from "../components/experience";
 import { allProjects } from "../constants/projects";
 import { runningValues } from "../constants/running";
 import { workoutValues } from "../constants/workout";
-import { ExperienceMini } from "../components/experience";
-import Calendar from "react-github-contribution-calendar";
-import Image from "next/image";
 
 export default function Home() {
-  var until = "2023-06-01";
+  var until = "2024-08-03";
   var weekNames = ["", "M", "", "W", "", "F", ""];
   var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"];
   var panelColors = [
@@ -22,87 +21,50 @@ export default function Home() {
 
   return (
     <div className="bg-white">
-      <div className="">
-        <div className="p-4 flex items-center justify-between gap-2"></div>
+      <div className="mx-auto antialiased">
+        <img
+          alt="profile picture"
+          src="/static/images/avi_cover.jpg"
+          className="w-full h-[300px] mx-auto object-cover object-[50%_60%]"
+        />
         <div className=" border-b sm:pt-16">
-          {/* <img
-            alt="profile picture"
-            src="/static/images/profile2.jpg"
-            className="w-[400px] h-[400px] mx-auto object-cover"
-          /> */}
-          <div className="max-w-2xl mx-auto p-4">
-            <div className="pb-4">
-              <h1 className="font-serif text-black text-3xl pb-4">
+          <div className="max-w-2xl mx-auto p-4 ">
+            <div className="">
+              <h1 className="font-serif text-black font-normal text-3xl ">
                 Avinash Jain
               </h1>
-              <p className="pb-4 text-gray-700">
-                Hey there! I&apos;m Avi. I live in SF and I&apos;m a full-stack
-                engineer and former founder. I&apos;m currently exploring my
-                next opportunity.
-              </p>
-              <p className="pb-4 text-gray-700">
-                I spent the last few months exploring{" "}
-                <a
-                  href="https://www.withmelt.com/"
-                  target="_blank"
-                  className="underline"
-                >
-                  AI dubbing as a tool
-                </a>{" "}
-                for educational creators. Ultimately, this wasn&apos;t a big
-                enough problem for creators - social capital wasn&apos;t enough
-                across language to compete against existing content, and the
-                willingness to pay was low.
-              </p>
-              <p className="pb-4 text-gray-700">
-                Before that, I was the co-founder of Cardinal Labs, an NFT
-                infrastructure company on Solana. We raised $4.3 million, and at
-                our peak had 40k monthly active users across our protocols and
-                processed 6+ million transactions.
-              </p>
-              <p className="pb-4 text-gray-700">
-                I&apos;ve been teaching online for over 8 years, helping over a
-                million students how to code through{" "}
-                <a
-                  className="underline"
-                  href="https://www.udemy.com/user/avinashjain5/"
-                  target="_blank"
-                  rel="noreferer"
-                >
-                  Udemy courses
-                </a>
-                ,{" "}
-                <a
-                  className="underline"
-                  href="https://youtube.com/c/TheCodex"
-                  target="_blank"
-                  rel="noreferer"
-                >
-                  YouTube videos
-                </a>{" "}
-                and projects on my own platform,{" "}
-                <a
-                  className="underline"
-                  href="https://thecodex.me/"
-                  target="_blank"
-                  rel="noreferer"
-                >
-                  The Codex
-                </a>
-                .
-              </p>
-              <p className="pb-4 text-gray-700">
-                Areas that currently excite me: the whitespace between task
-                automation and AGI - building human-like tools and experiences.
-                Tools for all things video: creativity, infrastructure and
-                analysis. Great people, great teams.
-              </p>
-              <p className="pb-4 text-gray-700">
-                If you&apos;re working on an in-person startup in SF looking to
-                hire a technical all-rounder, I&apos;d love to chat.
-              </p>
+              <div className="prose mt-4">
+                <p className=" text-gray-700">
+                  Hey there! I&apos;m Avi. I live in SF and I&apos;m an early
+                  engineer at{" "}
+                  <a target="_blank" href="https://www.usequanta.com/">
+                    <u>Quanta</u>
+                  </a>
+                  , a seed-stage startup backed by Accel. We're a team of 5,
+                  automating accounting for 20+ companies with a simple
+                  principle:{" "}
+                </p>
+                <div></div>
+                <blockquote className="text-gray-700 not-italic font-normal mb-1">
+                  To answer any financial question or insight about your
+                  business, you need real-time, high quality data. To get that
+                  data, you <b>have to do the accounting</b>.
+                </blockquote>
+                <p className="text-gray-700">
+                  We're building the best source of financial data for your
+                  company. And we're closing your books faster and more
+                  accurately than any other tool or human. If you're interested
+                  in joining us,{" "}
+                  <a
+                    href="https://wellfound.com/company/quanta-13"
+                    target="_blank"
+                  >
+                    we're hiring!
+                  </a>
+                </p>
+              </div>
 
-              <div className="flex flex-col text-md">
+              <div className="text-md mt-8">
                 <div className="flex">
                   <span className="text-gray-500">Twitter</span>
                   <hr className="w-full mt-3 mx-4 border-gray-300" />
@@ -141,7 +103,7 @@ export default function Home() {
                 </div>
               </div>
               <h4 className="my-4 font-normal text-xs text-gray-500">
-                Last updated: Feb 1st, 2024
+                Last updated: Aug 3rd, 2024
               </h4>
             </div>
           </div>
@@ -309,6 +271,24 @@ export default function Home() {
                   <ul className="list-item list-inside m-0">
                     Debt: The First 5,000 years
                   </ul>
+                  <ul className="list-item list-inside m-0 text-blue-500 font-semibold">
+                    When Breath Becomes Air
+                  </ul>
+                  <ul className="list-item list-inside m-0">
+                    Someone Who Will Love You in All Your Damaged Glory
+                  </ul>
+                  <ul className="list-item list-inside m-0 text-blue-500 font-semibold">
+                    The Dark Forest
+                  </ul>
+                  <ul className="list-item list-inside m-0">Death's End</ul>
+                  <ul className="list-item list-inside m-0 text-blue-500 font-semibold">
+                    Zen and the Art of Motorcycle Maintenance
+                  </ul>
+                  <ul className="list-item list-inside m-0">Stay True*</ul>
+                  <ul className="list-item list-inside m-0">
+                    Brother's Karamazov*
+                  </ul>
+
                   <ul className="text-black mb-1 font-semibold">2024</ul>
                 </div>
               </div>
@@ -316,14 +296,14 @@ export default function Home() {
               <hr className="my-6" />
               <h1 className="mb-1">Running</h1>
               <div className="text-sm text-gray-500 mb-6">
-                2023 mileage: 550 mi ·{" "}
+                2024 mileage: 452 mi ·{" "}
                 <span className="text-[#d4af37] font-semibold">
                   half marathon
                 </span>{" "}
                 pr: 1:37:35
               </div>
-              {/* <div className="bg-gray-100 p-4 rounded-xl flex flex-col gap-2">
-                <Calendar
+              <div className="bg-gray-100 p-4 rounded-xl flex flex-col gap-2">
+                <GitHubCalendar
                   values={runningValues}
                   until={until}
                   weekNames={weekNames}
@@ -333,14 +313,14 @@ export default function Home() {
                   panelAttributes={undefined}
                   panelColors={panelColors}
                 />
-              </div> */}
+              </div>
               <hr className="my-6" />
               <h1 className="mb-1">Lifting</h1>
               <div className="text-sm text-gray-500 mb-6">
-                75 hard completed · 1000 lb club progress: 79%
+                75 hard completed · 1000 lb club progress: 62%
               </div>
-              {/* <div className="bg-gray-100 p-4 rounded-xl flex flex-col gap-2">
-                <Calendar
+              <div className="bg-gray-100 p-4 rounded-xl flex flex-col gap-2">
+                <GitHubCalendar
                   values={workoutValues}
                   until={until}
                   weekNames={weekNames}
@@ -350,7 +330,7 @@ export default function Home() {
                   panelAttributes={undefined}
                   panelColors={panelColors}
                 />
-              </div> */}
+              </div>
               <hr className="my-6" />
             </article>
           </div>
