@@ -9,7 +9,7 @@ import { workoutValues } from "../constants/workout";
 export default function Home() {
   var until = "2024-08-03";
   var weekNames = ["", "M", "", "W", "", "F", ""];
-  var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"];
+  var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"];
   var panelColors = [
     "#DDD",
     "#9be9a8",
